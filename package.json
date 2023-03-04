@@ -1,0 +1,28 @@
+{
+  "name": "ktex",
+  "displayName": "KTeX",
+  "description": "syntactic sugar for LaTeX",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ktex",
+      "aliases": ["KTeX", "ktex"],
+      "extensions": [".ktex"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ktex",
+      "scopeName": "text.ktex",
+      "path": "./syntaxes/ktex.tmLanguage.json"
+    }], 
+    "scripts": {
+      "build": "python3 /home/nico/latex_replacement/second_attempt/analyze_file.py ${file}" 
+    }
+  }
+}

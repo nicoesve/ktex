@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "KTeX",
+	"patterns": [
+		{
+			"name": "keyword",
+			"match": "@[a-zA-Z]{2}"
+		},
+		{
+			"name": "keyword",
+			"match": "\\$"
+		}, 
+		{
+			"name": "keyword",
+			"match": "\\\\([a-zA-Z]+|.)"
+		}, 
+		{
+			"name": "markup.heading",
+			"match": "^(#+)(.*)$"
+		}, 
+		{
+			"name": "keyword",
+			"match": "title"
+		},
+		{
+			"name": "keyword",
+			"match": "packages"
+		}
+	],
+	"scopeName": "text.ktex"
+}
